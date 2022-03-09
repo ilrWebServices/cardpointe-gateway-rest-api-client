@@ -1,0 +1,18 @@
+{
+  "name": "ilrwebservices/cardpointe-gateway-rest-api-client",
+  "type": "library",
+  "description": "PHP library for the CardPointe Gateway API",
+  "license": "MIT",
+  "keywords": ["cardpointe", "api"],
+  "homepage": "https://github.com/ilrWebServices/cardpointe-gateway-rest-api-client",
+  "require": {
+    "php": ">=7.4.0",
+    "ext-json": "*",
+    "guzzlehttp/guzzle": ">=6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "CardPointeGateway\\": "src/"
+    }
+  }
+}
