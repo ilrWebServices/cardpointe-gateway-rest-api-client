@@ -78,7 +78,17 @@ $client_data = $client_response->getData();
 
 // Returns:
 // Array
-
+// (
+//     [site] => fts
+//     [acctupdater] => N
+//     [cvv] => N
+//     [cardproc] => RPCT
+//     [fee_type] => N
+//     [enabled] => 1
+//     [echeck] => N
+//     [merchid] => xxxxxxxxxxxx
+//     [avs] => N
+// )
 ```
 
 Be careful with large responses, however, as they can consume too much memory.
@@ -88,11 +98,11 @@ Sending JSON data to API endpoints can be done using the `json` request option f
 ```php
 $new_client_response = $client->post('auth', [
   'json' => [
-    'merchid': 'xxxxxxxxxxxx',
-    'amount': '20.01',
-    'expiry': 'MMYY',
-    'account': '4111111111111111',
-    'cvv2': '123',
+    'merchid' => 'xxxxxxxxxxxx',
+    'amount' => '20.01',
+    'expiry' => 'MMYY',
+    'account' => '4111111111111111',
+    'cvv2' => '123',
   ],
 ]);
 ```
